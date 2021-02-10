@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://bernardmurphy.net/pokedex/static/css/main.1e1b2953.chunk.css",
+    "main.js": "https://bernardmurphy.net/pokedex/static/js/main.74654f82.chunk.js",
+    "main.js.map": "https://bernardmurphy.net/pokedex/static/js/main.74654f82.chunk.js.map",
+    "runtime-main.js": "https://bernardmurphy.net/pokedex/static/js/runtime-main.5b12a6ec.js",
+    "runtime-main.js.map": "https://bernardmurphy.net/pokedex/static/js/runtime-main.5b12a6ec.js.map",
+    "static/js/2.b0a0ed10.chunk.js": "https://bernardmurphy.net/pokedex/static/js/2.b0a0ed10.chunk.js",
+    "static/js/2.b0a0ed10.chunk.js.map": "https://bernardmurphy.net/pokedex/static/js/2.b0a0ed10.chunk.js.map",
+    "index.html": "https://bernardmurphy.net/pokedex/index.html",
+    "precache-manifest.d1bc68cca7a44a5f18849282329e7bde.js": "https://bernardmurphy.net/pokedex/precache-manifest.d1bc68cca7a44a5f18849282329e7bde.js",
+    "service-worker.js": "https://bernardmurphy.net/pokedex/service-worker.js",
+    "static/css/main.1e1b2953.chunk.css.map": "https://bernardmurphy.net/pokedex/static/css/main.1e1b2953.chunk.css.map",
+    "static/js/2.b0a0ed10.chunk.js.LICENSE.txt": "https://bernardmurphy.net/pokedex/static/js/2.b0a0ed10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b12a6ec.js",
+    "static/js/2.b0a0ed10.chunk.js",
+    "static/css/main.1e1b2953.chunk.css",
+    "static/js/main.74654f82.chunk.js"
+  ]
+}

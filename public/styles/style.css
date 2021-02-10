@@ -1,0 +1,521 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face{
+  font-family: Ralereg;
+  src: url('https://bernardmurphy.net/assets/Raleway-Regular.ttf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-size: 12000% 12000%;
+  background-image: linear-gradient(67deg, rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1),  rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1),  rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1));
+  -webkit-animation: bg 3000s linear infinite;
+  -moz-animation: bg 3000s linear infinite;
+  animation: bg 3000s linear infinite;
+}
+
+#demo-video {
+  width: 80%;
+  display: block;
+  margin: 3.5rem auto 2rem auto;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+@-moz-keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+@keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+
+/* body {
+  background-size: 400% 400%;
+  background-image: linear-gradient(67deg, rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1), rgba(0,0,0,1), rgba(60, 70, 70,1));
+  -webkit-animation: bg 45s linear infinite;
+  -moz-animation: bg 45s linear infinite;
+  animation: bg 45s linear infinite;
+} */
+
+/* @-webkit-keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:91.93812% 50%}
+}
+@-moz-keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:91.93812% 50%}
+}
+@keyframes bg {
+  0%{background-position:0% 50%}
+  100%{background-position:91.93812% 50%}
+} */
+
+#div-bio-container-home {
+  width: 75%;
+  margin: 3rem auto;
+  display: flex;
+}
+
+#img-mugshot {
+  height: 384px;
+  width: 384px;
+}
+
+#div-bio-home {
+  margin-left: 2.5rem;
+}
+
+#h1-name, #p-short-bio, #h2-services-offered, .li-services-offered {
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#h1-name {
+  font-size: 5.6rem;
+  margin-top: 1rem;
+}
+
+#p-short-bio {
+  font-size: 3.2rem;
+  margin-top: 1.5rem;
+}
+
+#h2-services-offered {
+  font-size: 2.6rem;
+  margin-top: 2rem;
+}
+
+#ul-services-offered {
+  margin-top: 1rem;
+}
+
+.li-services-offered {
+  font-size: 2rem;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+}
+
+hr {
+  width: 85%;
+}
+
+#div-tech-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.p-tech-item, .p-tech-item-b {
+  font-size: 2.1rem;
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#h3-latest-projects, #h3-contact, #h3-video {
+  text-align: center;
+  font-size: 4.8rem;
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  margin-top: 3.5rem;
+}
+
+.a-projects {
+  display: flex;
+  padding: 1.5rem;
+  border: 3px solid mediumslateblue;
+  width: 30rem;
+  text-decoration: none;
+  transition: 0.33s;
+}
+
+.a-projects:hover {
+  border: 3px solid whitesmoke;
+}
+
+.h4-project-name, .p-project-descriptions {
+  color: mediumslateblue;
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+}
+
+.h4-project-name {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.p-project-descriptions {
+  font-size: 2rem;
+}
+
+.img-project-icons {
+  width: 8rem;
+  height: 8rem;
+}
+
+.div-project-info {
+  margin-left: 1.5rem;
+}
+
+#div-projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.h4-project-name, .p-project-descriptions {
+  transition: 0.33s;
+}
+
+.back-button-dashboard {
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  font-size: 2.4rem;
+  margin-left: 4rem;
+}
+
+.back-button-dashboard:hover {
+  color: white;
+  transition: 0.25s;
+}
+
+#div-contact-form {
+  margin: 0 auto 3rem auto;
+  max-width: max-content;
+}
+
+.div-contact-fields {
+  margin: 1.5rem auto 3rem auto;
+  display: flex;
+}
+
+.labels-contact {
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: whitesmoke;
+}
+
+.inputs-contact {
+  margin-left: 1.5rem;
+}
+
+#input-email {
+  margin-left: 1.9844rem;
+}
+
+textarea {
+  width: 40rem;
+  height: 15rem;
+}
+
+#button-submit {
+  margin-left: 9.38969rem;
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: bold;
+  background: whitesmoke;
+  border: 2px solid black;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.33s;
+}
+
+#button-submit:hover {
+  color: white;
+  background: black;
+}
+
+#p-char-count {
+  color: white;
+  font-family: Ralereg, Times 'Times New Roman', Times, serif;
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+#h4-error {
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#h4-message {
+  font-family: Ralereg, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+#h4-error, #h4-message {
+  display: block;
+  max-width: 70vw;
+  word-break: break-word;
+}
+
+@media (max-width: 1551px){
+  #div-bio-container-home {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1269px){
+  #div-bio-container-home {
+    flex-direction: column;
+  }
+
+  #div-bio-home {
+    margin-left: 0;
+  }
+
+  #img-mugshot {
+    display: block;
+    margin: 1rem auto;
+  }
+  #h1-name {
+    text-align: center;
+  }
+  #p-short-bio {
+    text-align: center;
+  }
+  #h2-services-offered {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1150px){
+  .p-tech-item, .p-tech-item-b {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1040px){
+  .a-projects {
+    width: 25rem;
+  }
+
+  .img-project-icons {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .h4-project-name {
+    font-size: 2.2rem;
+  }
+
+  .p-project-descriptions {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 915px){
+  .a-projects {
+    width: 30rem;
+    margin: 1.5rem auto;
+  }
+
+  .img-project-icons {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .h4-project-name {
+    font-size: 2.8rem;
+  }
+
+  .p-project-descriptions {
+    font-size: 2rem;
+  }
+
+  #div-projects-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 845px){
+  hr, #div-tech-list {
+    width: 95%;
+  }
+  .li-services-offered {
+    font-size: 1.7rem;
+  }
+  #h2-services-offered {
+    font-size: 2.2rem;
+  }
+  .p-short-bio {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 756px){
+  #p-short-bio {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 720px){
+  .p-tech-item, .p-tech-item-b {
+    font-size: 1.4rem;
+  }
+
+  #h3-latest-projects, #h3-contact, #h3-video {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 714px){
+  #div-bio-container-home {
+    width: 95%;
+  }
+}
+
+@media (max-width: 693px){
+  .p-tech-item, .p-tech-item-b {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 569px){
+  #p-short-bio {
+    font-size: 2.2rem;
+  }
+  .li-services-offered {
+    margin-top: 1rem;
+  }
+  #h3-latest-projects, #h3-contact, #h3-video {
+    font-size: 3.2rem;
+  }
+
+  .div-contact-fields {
+    flex-direction: column;
+  }
+
+  .labels-contact {
+    margin-bottom: 1.5rem;
+  }
+
+  #input-email, #input-name {
+    width: 20rem;
+  }
+
+  #button-submit {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 565px){
+  .p-tech-item, .p-tech-item-b {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .li-services-offered {
+    font-size: 1.6rem;
+  }
+  #img-mugshot {
+    height: 275px;
+    width: 275px;
+  }
+  .a-projects {
+    width: 20rem;
+  }
+
+  .img-project-icons {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .h4-project-name {
+    font-size: 1.8rem;
+  }
+
+  .p-project-descriptions {
+    font-size: 1.4rem;
+  }
+  #div-bio-container-home {
+    width: 100%;
+  }
+  #h2-services-offered {
+    margin-left: 1rem;
+  }
+  #div-tech-list {
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .p-tech-item, .p-tech-item-b {
+    width: 33%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .labels-contact {
+    margin-left: 1rem;
+  }
+
+  #input-message {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #h4-error, #h4-message {
+    max-width: 270px;
+  }
+
+  .inputs-contact, #input-email {
+    margin-left: 0;
+  }
+
+  #h4-error, #h4-message {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 450px){
+  #h1-name {
+    font-size: 4.8rem;
+  }
+  #p-short-bio {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 400px){
+  #h1-name {
+    font-size: 3.6rem;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://bernardmurphy.net/freegluten/static/css/main.4f2e84a9.chunk.css",
+    "main.js": "https://bernardmurphy.net/freegluten/static/js/main.8e6e8fe5.chunk.js",
+    "main.js.map": "https://bernardmurphy.net/freegluten/static/js/main.8e6e8fe5.chunk.js.map",
+    "runtime-main.js": "https://bernardmurphy.net/freegluten/static/js/runtime-main.4e1ddcf6.js",
+    "runtime-main.js.map": "https://bernardmurphy.net/freegluten/static/js/runtime-main.4e1ddcf6.js.map",
+    "static/js/2.5494377a.chunk.js": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js",
+    "static/js/2.5494377a.chunk.js.map": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js.map",
+    "static/js/3.85727a6c.chunk.js": "https://bernardmurphy.net/freegluten/static/js/3.85727a6c.chunk.js",
+    "static/js/3.85727a6c.chunk.js.map": "https://bernardmurphy.net/freegluten/static/js/3.85727a6c.chunk.js.map",
+    "index.html": "https://bernardmurphy.net/freegluten/index.html",
+    "static/css/main.4f2e84a9.chunk.css.map": "https://bernardmurphy.net/freegluten/static/css/main.4f2e84a9.chunk.css.map",
+    "static/js/2.5494377a.chunk.js.LICENSE.txt": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e1ddcf6.js",
+    "static/js/2.5494377a.chunk.js",
+    "static/css/main.4f2e84a9.chunk.css",
+    "static/js/main.8e6e8fe5.chunk.js"
+  ]
+}
