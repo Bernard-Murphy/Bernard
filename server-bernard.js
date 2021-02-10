@@ -7,6 +7,7 @@ const https = require('https');
 const cors = require('cors');
 const axios = require('axios');
 const dotenv = require('dotenv');
+const XMLHttpRequest = require('node-http-xhr');
 
 
 const hb = exphbs.create({
@@ -70,25 +71,26 @@ server.post('/message', async (req, res) => {
 server.get('/glutenfree/:lat/:lon', async (req, res) => {
     try {
         let rests = []; 
-        axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=gluten free&latitude=${req.params.lat}&longitude=${req.params.lon}`, {
-            headers: {
-                Authorization: `Bearer ${process.env.YELP_API_TOKEN}`,
-                Origin: 'localhost',
-                withCredentials: true,
-                "Access-Control-Allow-Origin":"*",
-                "accept": "application/json",
+        let config = {
+            method: 'get',
+            url: `http://api.yelp.com/v3/businesses/search?term=gluten free&latitude=${req.params.lat}&longitude=${req.params.lon}`,
+            headers: { 
+              'Content-type': 'application/json', 
+              'Authorization': `Bearer ${process.env.YELP_API_KEY}`
             }
-        })
-            .then(response => {
-                rests = response.data;
+          };
+          
+          axios(config)
+          .then(function (response) {
+            rests = response.data;
                 res.send({
                     rests: rests
                 })
-            })
-            .catch(err => {
-                console.log(err);
-                res.sendStatus(500);
-            })
+          })
+          .catch(function (error) {
+            console.log(error);
+            res.sendStatus(500);
+          });
     } catch (err){
         console.log(err);
         res.sendStatus(500);
@@ -98,25 +100,26 @@ server.get('/glutenfree/:lat/:lon', async (req, res) => {
 server.get('/vegan/:lat/:lon', async (req, res) => {
     try {
         let rests = []; 
-        axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=vegan&latitude=${req.params.lat}&longitude=${req.params.lon}`, {
-            headers: {
-                Authorization: `Bearer ${process.env.YELP_API_TOKEN}`,
-                Origin: 'localhost',
-                withCredentials: true,
-                "Access-Control-Allow-Origin":"*",
-                "accept": "application/json",
+        let config = {
+            method: 'get',
+            url: `http://api.yelp.com/v3/businesses/search?term=vegan&latitude=${req.params.lat}&longitude=${req.params.lon}`,
+            headers: { 
+              'Content-type': 'application/json', 
+              'Authorization': `Bearer ${process.env.YELP_API_KEY}`
             }
-        })
-            .then(response => {
-                rests = response.data;
+          };
+          
+          axios(config)
+          .then(function (response) {
+            rests = response.data;
                 res.send({
                     rests: rests
                 })
-            })
-            .catch(err => {
-                console.log(err);
-                res.sendStatus(500);
-            })
+          })
+          .catch(function (error) {
+            console.log(error);
+            res.sendStatus(500);
+          });
     } catch (err){
         console.log(err);
         res.sendStatus(500);

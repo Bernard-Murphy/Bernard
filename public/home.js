@@ -1,4 +1,11 @@
 const projects = document.getElementsByClassName('a-projects');
+const linksTop = document.getElementsByClassName('a-top');
+
+
+for (i in linksTop){
+    linksTop[i].style.transition = '0.33s';
+}
+
 
 for (let i = 0; i < projects.length; i++){
     let index = i + 1;

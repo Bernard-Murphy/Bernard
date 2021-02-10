@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernard Murphy</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="/home.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://kit.fontawesome.com/46d9ee64ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="div-bio-container-home">
+    <img id="img-mugshot" src="/assets/profilecircle.png"/>
+    <div id="div-bio-home">
+        <h1 id="h1-name">Bernard Murphy</h1>
+        <p id="p-short-bio">Software Engineer</p>
+        <h2 id="h2-services-offered">What I can do for you:</h2>
+        <ul id="ul-services-offered">
+            <li class="li-services-offered">Your entire website built from scratch - front and back end</li>
+            <li class="li-services-offered">A website that looks beautiful on all screen sizes - especially mobile devices</li>
+            <li class="li-services-offered">Server design with impenetrable encryption and security features.</li>
+            <li class="li-services-offered">Register your domain, create DNS records, set up your email server. </li>
+            <li class="li-services-offered">Set up an Ubuntu server running NGINX to host as many websites as you'd like on the same machine.</li>
+            <li class="li-services-offered">Set up a highly secure database to store and access your users' information.</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div id="div-tech-list">
+    <p class="p-tech-item">Node</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">Express</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">MySQL</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">React</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">Redux</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">Handlebars</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">PHP</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">AWS</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">NGINX</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">Ubuntu</p>
+    <p class="p-tech-item-b">•</p>
+    <p class="p-tech-item">Cloudflare</p>
+</div>
+
+<h3 id="h3-video">Watch My Demo Video</h3>
+<video src='/assets/video.mp4' id="demo-video" controls></video>
+
+<h3 id="h3-latest-projects">Check out my latest projects:</h3>
+<div id="div-projects-container">
+    <a href="https://nanaimg.net" class="a-projects" id="a-proj-1">
+        <img class="img-project-icons" src="/assets/ms-icon-310x310.png"/>
+        <div class="div-project-info">
+            <h4 class="h4-project-name" id="h4-proj-1">NanaImg</h4>
+            <p class="p-project-descriptions" id="p-proj-1">Simple, reliable image host</p> 
+        </div>
+    </a>
+    <a href="/pokedex" class="a-projects" id="a-proj-2">
+        <img class="img-project-icons" src="/assets/pokeballtrans2.png"/>
+        <div class="div-project-info">
+            <h4 class="h4-project-name" id="h4-proj-2">Pokedex</h4>
+            <p class="p-project-descriptions" id="p-proj-2">Strategy dex using Pokemon API</p> 
+        </div>
+    </a>
+    <a href="https://bernardmurphy.net/specoresto" class="a-projects" id="a-proj-3">
+        <img class="img-project-icons" src="/assets/spectorestoicon.png"/>
+        <div class="div-project-info">
+            <h4 class="h4-project-name" id="h4-proj-3">Specoresto</h4>
+            <p class="p-project-descriptions" id="p-proj-3">Gluten free/vegan restaurant locator</p> 
+        </div>
+    </a>
+</div>
+
+<div id="div-contact-form">
+    <h3 id="h3-contact">Contact Me</h3>
+    <div class="div-contact-fields">
+        <label class="labels-contact">Name:</label>
+        <input class="inputs-contact" id="input-name"/>
+    </div>
+    <div class="div-contact-fields">
+        <label class="labels-contact">Email:</label>
+        <input class="inputs-contact" id="input-email"/>
+    </div>
+    <div class="div-contact-fields">
+        <label class="labels-contact">Message:</label>
+        <textarea class="inputs-contact" id="input-message"></textarea>
+    </div>
+    <button onClick="contactSubmit()" id="button-submit">Submit</button>
+    <h4 id="h4-error" class="hide"></h4>
+    <h4 id="h4-message" class="hide"></h4>
+</div>
+</body>
+</html>
