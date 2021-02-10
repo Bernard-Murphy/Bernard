@@ -133,10 +133,15 @@ hr {
   margin: 0 auto;
 }
 
-.p-tech-item, .p-tech-item-b {
+.p-tech-item, .p-tech-item-b, .p-contact {
   font-size: 2.1rem;
   font-family: Ralereg, 'Times New Roman', Times, serif;
   color: whitesmoke;
+}
+
+.p-contact {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 #h3-latest-projects {
@@ -317,6 +322,7 @@ textarea {
 #div-projects {
   border-top: 8px solid rgb(33,35,38);
   background: whitesmoke;
+  padding-bottom: 3rem;
 }
 
 .div-project-containers {
@@ -328,7 +334,9 @@ textarea {
 }
 
 .div-project-links {
+  display: block;
   margin: 0 2rem;
+  min-width: 255px;
 }
 
 .h4-project-names {
@@ -336,9 +344,6 @@ textarea {
   font-family: Ralereg, 'Times New Roman', Times, serif;
 }
 
-.img-project-icons-mini {
-  width: 2.5rem;
-}
 
 .a-project-links, .a-github-links {
   display: block;
@@ -352,7 +357,7 @@ textarea {
   border-radius: 25px;
   margin: 1rem 0;
   transition: 0.33s;
-  width: 80%;
+  width: 15.5rem;
 }
 
 .a-project-links:hover, .a-github-links:hover {
@@ -372,16 +377,37 @@ textarea {
   border-left: 2px solid rgb(158,158,158);
 }
 
-@media (max-width: 1551px){
+#div-contact-list {
+  display: flex;
+  width: 60rem;
+  justify-content: space-evenly;
+}
+
+.div-project-left {
+  display: flex;
+}
+
+.hr-projects {
+  display: none;
+}
+
+@media (max-width: 1830px){
   #div-bio-container-home {
     width: 85%;
+  }
+
+  #h1-name {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 1440px){
+  .div-project-containers {
+    width: 90%;
   }
 }
 
 @media (max-width: 1269px){
-  #div-bio-container-home {
-    flex-direction: column;
-  }
 
   #div-bio-home {
     margin-left: 0;
@@ -400,11 +426,48 @@ textarea {
   #h2-services-offered {
     margin-top: 3rem;
   }
+
+  .p-project-descriptions {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1150px){
   .p-tech-item, .p-tech-item-b {
     font-size: 1.6rem;
+  }
+
+  #div-bio-container-home {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1070px){
+  .div-project-containers {
+    flex-direction: column;
+  }
+
+  .div-project-links {
+    display: flex;
+    width: max-content;
+  }
+
+  .div-links {
+    margin-left: 2rem;
+  }
+
+  .div-project-descriptions {
+    border: 0;
+  }
+
+  .hr-projects {
+    display: inline;
+    margin-top: 1.5rem;
+  }
+
+  .div-project-left {
+    width: max-content;
+    margin: 0 auto;
   }
 }
 
@@ -413,38 +476,36 @@ textarea {
     width: 25rem;
   }
 
-  .img-project-icons {
-    width: 6rem;
-    height: 6rem;
-  }
 
   .h4-project-name {
     font-size: 2.2rem;
   }
 
-  .p-project-descriptions {
-    font-size: 1.6rem;
-  }
 }
 
 @media (max-width: 915px){
+
+  #div-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .a-top {
+    padding-top: 1rem;
+  }
+
   .a-projects {
     width: 30rem;
     margin: 1.5rem auto;
   }
 
-  .img-project-icons {
-    width: 8rem;
-    height: 8rem;
-  }
 
   .h4-project-name {
     font-size: 2.8rem;
   }
 
-  .p-project-descriptions {
-    font-size: 2rem;
-  }
 
   #div-projects-container {
     flex-direction: column;
@@ -470,6 +531,10 @@ textarea {
   #p-short-bio {
     font-size: 2.6rem;
   }
+
+  #h1-name {
+    font-size: 3.6rem;
+  }
 }
 
 @media (max-width: 720px){
@@ -486,11 +551,17 @@ textarea {
   #div-bio-container-home {
     width: 95%;
   }
+  .div-project-containers {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 693px){
   .p-tech-item, .p-tech-item-b {
     font-size: 1.2rem;
+  }
+  .div-project-links {
+    flex-direction: column;
   }
 }
 
@@ -526,6 +597,9 @@ textarea {
   .p-tech-item, .p-tech-item-b {
     font-size: 1rem;
   }
+  .p-project-descriptions {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px){
@@ -540,18 +614,10 @@ textarea {
     width: 20rem;
   }
 
-  .img-project-icons {
-    width: 5rem;
-    height: 5rem;
-  }
-
   .h4-project-name {
     font-size: 1.8rem;
   }
 
-  .p-project-descriptions {
-    font-size: 1.4rem;
-  }
   #div-bio-container-home {
     width: 100%;
   }
@@ -583,25 +649,64 @@ textarea {
   }
 
   .inputs-contact, #input-email {
-    margin-left: 0;
+    margin-left: 30px;
   }
 
   #h4-error, #h4-message {
     font-size: 1.4rem;
   }
+
+  #h1-name {
+    font-size: 3.2rem
+  }
+  .div-project-left {
+    flex-direction: column;
+  }
+
+  .img-project-icons {
+    margin: 0 auto;
+  }
+
+  .h4-project-names {
+    text-align: center;
+  }
+
+  .div-links {
+    margin-left: 0;
+  }
+
+  .a-github-links, .a-project-links {
+    margin: 1rem auto;
+  }
+
+  .div-project-containers {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .div-project-links {
+    width: max-content;
+    min-width: 0;
+  }
 }
 
 @media (max-width: 450px){
-  #h1-name {
-    font-size: 4.8rem;
-  }
   #p-short-bio {
     font-size: 1.9rem;
   }
+
+  #p-email {
+    font-size: 1.4rem;
+    word-wrap: break-word;
+  }
+
+  .a-top {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
 }
 
-@media (max-width: 400px){
-  #h1-name {
+@media (max-width: 350px){
+  .h4-project-names {
     font-size: 3.6rem;
   }
 }

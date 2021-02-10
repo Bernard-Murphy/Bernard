@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://bernardmurphy.net/freegluten/static/css/main.4f2e84a9.chunk.css",
-    "main.js": "https://bernardmurphy.net/freegluten/static/js/main.8e6e8fe5.chunk.js",
-    "main.js.map": "https://bernardmurphy.net/freegluten/static/js/main.8e6e8fe5.chunk.js.map",
+    "main.css": "https://bernardmurphy.net/freegluten/static/css/main.a27f52f9.chunk.css",
+    "main.js": "https://bernardmurphy.net/freegluten/static/js/main.600a364b.chunk.js",
+    "main.js.map": "https://bernardmurphy.net/freegluten/static/js/main.600a364b.chunk.js.map",
     "runtime-main.js": "https://bernardmurphy.net/freegluten/static/js/runtime-main.4e1ddcf6.js",
     "runtime-main.js.map": "https://bernardmurphy.net/freegluten/static/js/runtime-main.4e1ddcf6.js.map",
-    "static/js/2.5494377a.chunk.js": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js",
-    "static/js/2.5494377a.chunk.js.map": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js.map",
+    "static/js/2.7ff25732.chunk.js": "https://bernardmurphy.net/freegluten/static/js/2.7ff25732.chunk.js",
+    "static/js/2.7ff25732.chunk.js.map": "https://bernardmurphy.net/freegluten/static/js/2.7ff25732.chunk.js.map",
     "static/js/3.85727a6c.chunk.js": "https://bernardmurphy.net/freegluten/static/js/3.85727a6c.chunk.js",
     "static/js/3.85727a6c.chunk.js.map": "https://bernardmurphy.net/freegluten/static/js/3.85727a6c.chunk.js.map",
     "index.html": "https://bernardmurphy.net/freegluten/index.html",
-    "static/css/main.4f2e84a9.chunk.css.map": "https://bernardmurphy.net/freegluten/static/css/main.4f2e84a9.chunk.css.map",
-    "static/js/2.5494377a.chunk.js.LICENSE.txt": "https://bernardmurphy.net/freegluten/static/js/2.5494377a.chunk.js.LICENSE.txt"
+    "static/css/main.a27f52f9.chunk.css.map": "https://bernardmurphy.net/freegluten/static/css/main.a27f52f9.chunk.css.map",
+    "static/js/2.7ff25732.chunk.js.LICENSE.txt": "https://bernardmurphy.net/freegluten/static/js/2.7ff25732.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4e1ddcf6.js",
-    "static/js/2.5494377a.chunk.js",
-    "static/css/main.4f2e84a9.chunk.css",
-    "static/js/main.8e6e8fe5.chunk.js"
+    "static/js/2.7ff25732.chunk.js",
+    "static/css/main.a27f52f9.chunk.css",
+    "static/js/main.600a364b.chunk.js"
   ]
 }
